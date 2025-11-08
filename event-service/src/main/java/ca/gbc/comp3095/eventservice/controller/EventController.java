@@ -78,7 +78,6 @@ public class EventController {
         Event event = service.getEventById(id)
                 .orElseThrow(() -> new RuntimeException("Event not found with id: " + id));
 
-        // Return URL to fetch all wellness resources (events can link to any resources)
         return "http://wellness-resource-service:8081/api/resources";
     }
 }

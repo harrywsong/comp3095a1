@@ -16,9 +16,9 @@ public interface WellnessResourceService {
 
     List<WellnessResource> searchByKeyword(String keyword);
 
-    WellnessResource createResource(WellnessResourceRequest request);  // Changed
+    WellnessResource createResource(WellnessResourceRequest request);
 
-    WellnessResource updateResource(Long id, WellnessResourceRequest request);  // Changed
+    WellnessResource updateResource(Long id, WellnessResourceRequest request);
 
     void deleteResource(Long id);
 }

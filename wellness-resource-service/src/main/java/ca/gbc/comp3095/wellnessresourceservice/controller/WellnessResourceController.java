@@ -43,13 +43,13 @@ public class WellnessResourceController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public WellnessResource createResource(@RequestBody WellnessResourceRequest request) {  // Changed
+    public WellnessResource createResource(@RequestBody WellnessResourceRequest request) {
         return service.createResource(request);
     }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public WellnessResource updateResource(@PathVariable Long id, @RequestBody WellnessResourceRequest request) {  // Changed
+    public WellnessResource updateResource(@PathVariable Long id, @RequestBody WellnessResourceRequest request) {
         return service.updateResource(id, request);
     }
 
